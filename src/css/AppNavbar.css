@@ -1,0 +1,82 @@
+/* Navbar container */
+.mainNav {
+  background-color: #007bff; 
+  padding: 0.8rem 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand */
+.navbarBrand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.navbarBrand:hover {
+  color: #ffdd57;
+  cursor: pointer;
+}
+
+/* Nav Links */
+.nav-link {
+  color: #fff; 
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-decoration:  none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffdd57;
+  text-decoration: underline;
+}
+
+/* Logout button */
+.btn-logout {
+  background-color: #ffdd57; 
+  border: none;
+  color: #000;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+/* Toggle button for mobile */
+.toggleBtn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
+.toggleBtn:focus {
+  box-shadow: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-link {
+    margin: 5px 0;
+  }
+
+  .btn-logout {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
