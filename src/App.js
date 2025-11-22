@@ -29,6 +29,7 @@ function App() {
       <Router>
         <AppNavbar />
         <Routes>
+            <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
           <Route
             path="/userhomepage"
